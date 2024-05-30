@@ -78,13 +78,13 @@ function FlowBuilder() {
     );
 
     if (nodes.length > 1 && emptyTargetNodes.length > 1) {
-      alert('Error: More than one node has empty target handles.');
+      alert('cannot save 2 node files');
       return;
     }
 
     const flowData = { nodes, edges };
-    console.log('Saved Flow:', flowData);
-    alert('Flow saved successfully!');
+    console.log('flow', flowData);
+    alert('flow is saved');
   };
 
   return (
